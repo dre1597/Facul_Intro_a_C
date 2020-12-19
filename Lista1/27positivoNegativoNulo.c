@@ -4,17 +4,17 @@
 
 int main(void) {
   
-  int numero;
+	int numero;
 
-  printf("Informe um numero: ");
-  scanf("%d", &numero);
+	printf("Informe um numero: ");
+	scanf("%d", &numero);
 
-  if(numero > 0)
-    printf("Positivo.\n");
+	if(numero > 0)
+		printf("Positivo.\n");
 
-  else if(numero < 0)
-    printf("Negativo.\n");
+	else if(numero < 0)
+		printf("Negativo.\n");
     
-  else
-    printf("Nulo.\n");
+	else
+		printf("Nulo.\n");
 }

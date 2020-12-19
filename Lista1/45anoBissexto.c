@@ -4,12 +4,12 @@
 
 int main(void) {
   
-  int ano;
+	int ano;
 	
 	printf("\nAno:");
 	scanf("%d", &ano);
 
-  int verificaBissexto = (ano % 4 == 0) && (ano % 400 == 0 || ano % 100 != 0);
+	int verificaBissexto = (ano % 4 == 0) && (ano % 400 == 0 || ano % 100 != 0);
   
 	if(verificaBissexto)
 		printf("\nAno Bissexto.\n");

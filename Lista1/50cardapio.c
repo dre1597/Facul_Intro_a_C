@@ -18,22 +18,21 @@ calculado um item. (Use o comando switch...case).
 
 int main(void) {
 
-  int quant,cod;
+	int quant,cod;
 	
 	printf("\tMENU\n100-Cachorro quente-3.20\n101-bauru simples-4.50\n102-bauru com ovo-5.00\n103-hamburguer-6.30\n104-cheeseburger-6.60\n105-refrigerante-2.50\n106-sair.\nOpção: ");
-  scanf("%d", &cod);
+	scanf("%d", &cod);
 
 	printf("Escolha a quantidade: ");
 	scanf("%d", &quant);
 	
-	switch(cod)
-	{
+	switch(cod){
     
-    double precoTotal; 
+		double precoTotal; 
 
 		case 100:
 
-      precoTotal = quant * 3.20;
+			precoTotal = quant * 3.20;
 			printf("Preço Total: %.2lf", precoTotal);
 			break;
 

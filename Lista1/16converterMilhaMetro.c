@@ -4,13 +4,13 @@
 
 int main(void) {
   
-  double milhas, metros;
+	double milhas, metros;
 
-  printf("Informe o valor em milhas: ");
-  scanf("%lf", &milhas);
+	printf("Informe o valor em milhas: ");
+	scanf("%lf", &milhas);
 
-  metros = milhas * 1609;
+	metros = milhas * 1609;
 
-  printf("Valor em metros: %.2lf metros", metros);
+	printf("Valor em metros: %.2lf metros", metros);
 
 }

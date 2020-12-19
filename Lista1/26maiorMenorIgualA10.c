@@ -4,18 +4,18 @@
 
 int main(void) {
   
-  int numero;
+	int numero;
   
-  printf("Informe um numero: ");
-  scanf("%d", &numero);
+	printf("Informe um numero: ");
+	scanf("%d", &numero);
 
-  if(numero > 10)
-    printf("Maior do que 10.\n");
+	if(numero > 10)
+		printf("Maior do que 10.\n");
 
-  else if(numero < 10)
-    printf("Menor do que 10.\n");
+	else if(numero < 10)
+		printf("Menor do que 10.\n");
 
-  else 
-    printf("Igual a 10.\n");
+	else 
+		printf("Igual a 10.\n");
     
 }

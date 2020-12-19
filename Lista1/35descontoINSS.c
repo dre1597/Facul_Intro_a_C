@@ -9,21 +9,21 @@ segundo a tabela abaixo:
 
 int main(void) {
   
-  int salario;
+	int salario;
 
-  printf("Salario: ");
-  scanf("%d", &salario);
+	printf("Salario: ");
+	scanf("%d", &salario);
 
-  if(salario <= 900)
-    printf("Insento.");
+	if(salario <= 900)
+		printf("Insento.");
 
-  else if(salario <= 1200)
-    printf("10%% de desconto no INSS");
+	else if(salario <= 1200)
+		printf("10%% de desconto no INSS");
 
-  else if(salario <= 2000)
-    printf("15%% de desconto no INSS");
+	else if(salario <= 2000)
+		printf("15%% de desconto no INSS");
     
-  else
-    printf("27.5%% de desconto no INSS.");
+	else
+		printf("27.5%% de desconto no INSS.");
 
 }

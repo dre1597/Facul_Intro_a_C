@@ -4,19 +4,19 @@
 
 int main(void) {
   
-  int numero1, numero2;
+	int numero1, numero2;
 
-  printf("Informe um numero: ");
-  scanf("%d", &numero1);
+	printf("Informe um numero: ");
+	scanf("%d", &numero1);
 
-  printf("Informe outro numero: ");
-  scanf("%d", &numero2);
+	printf("Informe outro numero: ");
+	scanf("%d", &numero2);
 
-  int menor = numero1;
+	int menor = numero1;
 
-  if(numero2 < menor)
-    menor = numero2;
+	if(numero2 < menor)
+		menor = numero2;
 
-  printf("O menor numero lido foi: %d", menor);
+	printf("O menor numero lido foi: %d", menor);
 
 }

@@ -4,7 +4,7 @@
 
 int main(void) {
   
-  char op;
+	char op;
 	
 	printf("Digite uma letra: ");
 	scanf(" %c", &op);

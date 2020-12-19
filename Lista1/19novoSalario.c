@@ -5,12 +5,12 @@
 int main(void) {
   
 
-  double salario;
+	double salario;
 
-  printf("Salario: ");
-  scanf("%lf", &salario);
+	printf("Salario: ");
+	scanf("%lf", &salario);
 
-  double novoSalario = salario * 1.25;
+	double novoSalario = salario * 1.25;
 
-  printf("Novo salario: %.2lf", novoSalario);
+	printf("Novo salario: %.2lf", novoSalario);
 }

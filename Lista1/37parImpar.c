@@ -4,15 +4,15 @@
 
 int main(void) {
   
-  int numero;
+	int numero;
 
-  printf("Informe um numero: ");
-  scanf("%d", &numero);
+	printf("Informe um numero: ");
+	scanf("%d", &numero);
 
-  if(numero%2 ==0)
-    printf("O número lido é par.");
+	if(numero%2 ==0)
+		printf("O número lido é par.");
 
-  else
-    printf("O número lido é impar.");
-    
+	else
+		printf("O número lido é impar.");
+		
 }

@@ -12,31 +12,31 @@ o valor que ela deverá pagar.
 
 int main(void) {
   
-  int idade, cpf;
+	int idade, cpf;
 
-  printf("CPF: ");
-  scanf("%d", &cpf);
+	printf("CPF: ");
+	scanf("%d", &cpf);
 
-  printf("Idade: ");
-  scanf("%d", &idade);
+	printf("Idade: ");
+	scanf("%d", &idade);
 
-  printf("CPF: %d\n", cpf);
+	printf("CPF: %d\n", cpf);
 
-  if(idade <= 10)
-    printf("Irá pagar: R$100,00");
+	if(idade <= 10)
+		printf("Irá pagar: R$100,00");
 
-  else if(idade > 10 && idade <= 29)
-    printf("Irá pagar: R$200,00");
+	else if(idade > 10 && idade <= 29)
+		printf("Irá pagar: R$200,00");
 
-  else if(idade > 29 && idade <= 45)
-    printf("Irá pagar: R$250,00");
+	else if(idade > 29 && idade <= 45)
+		printf("Irá pagar: R$250,00");
 
-  else if(idade > 45 && idade <= 59)
-    printf("Irá pagar: R$400,00");
+	else if(idade > 45 && idade <= 59)
+		printf("Irá pagar: R$400,00");
 
-  else if(idade > 59 && idade <= 65)
-    printf("Irá pagar: R$500,00");
+	else if(idade > 59 && idade <= 65)
+		printf("Irá pagar: R$500,00");
 
-  else
-    printf("Irá pagar: R$700,00");
+	else
+		printf("Irá pagar: R$700,00");
 }

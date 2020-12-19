@@ -4,7 +4,7 @@
 
 int main(void) {
   
-  int op;
+	int op;
 	
 	printf("Informe o numero do mes: ");
 	scanf("%d", &op);

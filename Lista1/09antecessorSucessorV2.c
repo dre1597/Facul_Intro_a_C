@@ -6,21 +6,21 @@ do seu sucessor (use operadores de incremento e decremento).
 
 int main(void) {
   
-  int numeroLido;
-  int numero;
+	int numeroLido;
+	int numero;
+	
+	printf("Digite um numero: ");
+	scanf("%d", &numeroLido);
 
-  printf("Digite um numero: ");
-  scanf("%d", &numeroLido);
+	numero = numeroLido;
 
-  numero = numeroLido;
+	int antecessor = --numero;
 
-  int antecessor = --numero;
+	numero = numeroLido;
+	
+	int sucessor = ++numero;
 
-  numero = numeroLido;
-  
-  int sucessor = ++numero;
-
-  printf("Antecessor: %d.\n", antecessor);
-  printf("Sucessor: %d.\n", sucessor);
+	printf("Antecessor: %d.\n", antecessor);
+	printf("Sucessor: %d.\n", sucessor);
 
 }

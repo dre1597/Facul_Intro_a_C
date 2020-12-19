@@ -6,46 +6,46 @@ números*/
 
 int main(void) {
   
-  double num1, num2;
-  char operacao;
+	double num1, num2;
+	char operacao;
 
-  printf("Informe um numero: ");
-  scanf("%lf", &num1);
+	printf("Informe um numero: ");
+	scanf("%lf", &num1);
 
-  printf("Informe outro numero: ");
-  scanf("%lf", &num2);
+	printf("Informe outro numero: ");
+	scanf("%lf", &num2);
 
-  printf("Informe uma operação (+,-,* ou /): ");
-  scanf(" %c", &operacao);
+	printf("Informe uma operação (+,-,* ou /): ");
+	scanf(" %c", &operacao);
 
-  if(operacao == '+'){
+	if(operacao == '+'){
 
-    double soma = num1 + num2;
-    printf("A soma entre %.2lf e %.2lf resulta em %.2lf", num1, num2, soma);
+		double soma = num1 + num2;
+		printf("A soma entre %.2lf e %.2lf resulta em %.2lf", num1, num2, soma);
 
- }
+	}
 
-  else if(operacao == '-'){
+	else if(operacao == '-'){
+	
+		double diferenca = num1 - num2;
+		printf("A diferenca entre %.2lf e %.2lf resulta em %.2lf", num1, num2, diferenca);
 
-    double diferenca = num1 - num2;
-    printf("A diferenca entre %.2lf e %.2lf resulta em %.2lf", num1, num2, diferenca);
+	} 
 
- } 
-
-  else if(operacao == '*'){
+	else if(operacao == '*'){
     
-    double produto = num1 * num2;
-    printf("O produto entre %.2lf e %.2lf resulta em %.2lf", num1, num2, produto);
+		double produto = num1 * num2;
+		printf("O produto entre %.2lf e %.2lf resulta em %.2lf", num1, num2, produto);
 
-  }
+	}
 
-  else if(operacao == '/'){
+	else if(operacao == '/'){
 
-    double divisao = num1 / num2;
-    printf("A divisão entre %.2lf e %.2lf resulta em %.2lf", num1, num2, divisao);
+		double divisao = num1 / num2;
+		printf("A divisão entre %.2lf e %.2lf resulta em %.2lf", num1, num2, divisao);
 
-  }
+	}
 
-  else
-    printf("Operação inválida.");
+	else
+		printf("Operação inválida.");
 }

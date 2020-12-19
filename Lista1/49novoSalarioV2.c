@@ -13,7 +13,7 @@ e imprime o seu novo salário. (Use o comando switch...case)
 
 int main(void) {
 
-  double salario;
+	double salario;
 	char op;
 	
 	printf("\tPlano Aumento\nA-10%%\nB-15%%\nC-20%%\n");
@@ -24,25 +24,25 @@ int main(void) {
 	printf("Qual seu plano de trabalho? ");
 	scanf(" %c", &op);
 
-	switch(op)
-	{
-    double novoSalario;
+	switch(op){
+		
+		double novoSalario;
 
 		case 'A':
 
-      novoSalario = salario * 1.10;
+			novoSalario = salario * 1.10;
 			printf("Novo salario: %.2lf", novoSalario);
 			break;
 
 		case 'B':
 
-      novoSalario = salario * 1.15;
+			novoSalario = salario * 1.15;
 			printf("Novo salario: %.2f", novoSalario);
 			break;
 
 		case 'C':
 
-      novoSalario = salario * 1.20;
+			novoSalario = salario * 1.20;
 			printf("Novo salario: %.2f", novoSalario);
 			break;
 

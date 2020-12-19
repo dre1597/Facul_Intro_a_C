@@ -5,8 +5,8 @@
 
 int main(void) {
   
-  int potencia = pow(3,4);
+	int potencia = pow(3,4);
 
-  printf("A potência de 3 elevado a 4 é %d.\n", potencia);
+	printf("A potência de 3 elevado a 4 é %d.\n", potencia);
 
 }

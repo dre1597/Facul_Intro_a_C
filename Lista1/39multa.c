@@ -11,7 +11,7 @@ c)
 
 int main(void) {
 
-  double veloAvenida,veloMotorista,veloAcima;
+	double veloAvenida,veloMotorista,veloAcima;
 	
 	printf("Qual a velocidade maxima da avenida? ");
 	scanf("%lf", &veloAvenida);

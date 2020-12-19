@@ -8,26 +8,26 @@ ii. Para mulheres: (62.1*h)-44.7 Onde h é a altura.
 
 int main(void) {
   
-  double altura;
-  char sexo;
+	double altura;
+	char sexo;
 
-  printf("Informe a altura em metros:");
-  scanf("%lf", &altura);
+	printf("Informe a altura em metros:");
+	scanf("%lf", &altura);
 
-  printf("Sexo (M/F): ");
-  scanf(" %c", &sexo);
+	printf("Sexo (M/F): ");
+	scanf(" %c", &sexo);
 
-  if(sexo == 'M'){
+	if(sexo == 'M'){
 
-    double pesoIdeal = (72.7 * altura) - 58;
-    printf("O seu peso ideal é: %.2lf.\n", pesoIdeal);
+		double pesoIdeal = (72.7 * altura) - 58;
+		printf("O seu peso ideal é: %.2lf.\n", pesoIdeal);
 
-  }
-  else{
+	}
+	else{
 
-    double pesoIdeal = (62.1 * altura) - 44.7;
-    printf("O seu peso ideal é: %.2lf.\n", pesoIdeal);
+		double pesoIdeal = (62.1 * altura) - 44.7;
+		printf("O seu peso ideal é: %.2lf.\n", pesoIdeal);
 
-  }
+	}
 
 }

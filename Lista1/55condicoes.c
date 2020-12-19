@@ -9,7 +9,7 @@ y = x² , se x > 1;*/
 
 int main(void) {
   
-  int x;
+	int x;
 
 	printf("Inteiro:");
 	scanf("%d", &x);

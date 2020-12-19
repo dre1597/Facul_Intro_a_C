@@ -4,19 +4,19 @@
 
 int main(void) {
   
-  int n;
+	int n;
 
-  printf("Informe um numero: ");
-  scanf("%d", &n);
+	printf("Informe um numero: ");
+	scanf("%d", &n);
 
-  if(n > 100)
-    printf("O numero lido foi: %d", n);
+	if(n > 100)
+		printf("O numero lido foi: %d", n);
 
-  else{
+	else{
 
-    n = n * 3;
-    printf("O numero lido multiplicado por 3 é: %d ", n);
+		n = n * 3;
+		printf("O numero lido multiplicado por 3 é: %d ", n);
     
-  }
+	}
 
 }

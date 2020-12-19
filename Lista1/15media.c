@@ -4,17 +4,17 @@
 
 int main(void) {
   
-  double numero1, numero2;
-  double media;
+	double numero1, numero2;
+	double media;
 
-  printf("Informe um numero: ");
-  scanf("%lf", &numero1);
+	printf("Informe um numero: ");
+	scanf("%lf", &numero1);
 
-  printf("Informe outro numero: ");
-  scanf("%lf", &numero2);
+	printf("Informe outro numero: ");
+	scanf("%lf", &numero2);
 
-  media = (numero1 + numero2) / 2;
+	media = (numero1 + numero2) / 2;
 
-  printf("MEDIA: %.2lf", media);
+	printf("MEDIA: %.2lf", media);
 
 }

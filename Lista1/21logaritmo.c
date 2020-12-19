@@ -5,25 +5,25 @@
 
 int main(void) {
   
-  double numero, base;
+	double numero, base;
 
-  printf("Informe um numero: ");
-  scanf("%lf", &numero);
+	printf("Informe um numero: ");
+	scanf("%lf", &numero);
+	
+	printf("Informe uma base: ");
+	scanf("%lf", &base);
 
-  printf("Informe uma base: ");
-  scanf("%lf", &base);
+	if(numero <= 0)
+		printf("Numero inválido.\n");
+		
+	else if(base == 1 || base <= 0)
+		printf("Base inválida.\n");
+	
+	else{
 
-  if(numero <= 0)
-    printf("Numero inválido.\n");
+		double logaritmo = log(numero) / log(base);
+		printf("Logaritmo de %.2lf na base %.2lf: %.2lf", numero, base, logaritmo);
 
-  else if(base == 1 || base <= 0)
-    printf("Base inválida.\n");
-
-  else{
-
-    double logaritmo = log(numero) / log(base);
-    printf("Logaritmo de %.2lf na base %.2lf: %.2lf", numero, base, logaritmo);
-
-  }
+	}
 
 }

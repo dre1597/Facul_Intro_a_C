@@ -4,11 +4,11 @@
 
 int main(void) {
   
-  double numero;
+	double numero;
 
-  printf("Informe um numero: ");
-  scanf("%lf", &numero);
+	printf("Informe um numero: ");
+	scanf("%lf", &numero);
 
-  printf("Quinta parte: %.2lf", numero/5.0);
+	printf("Quinta parte: %.2lf", numero/5.0);
 
 }

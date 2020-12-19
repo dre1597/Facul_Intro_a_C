@@ -13,40 +13,39 @@ apos o menu leia dois numeros e calcule o indicado no menu
 
 int main(void) {
   
-  double x, y;
+	double x, y;
 
 	char op;
 	
 	printf("\tMENU\na.adição\nb.subtração\nc.multiplicação\nd.divisão inteira\ne.divisão real\nf.resto da divisão\nOpção: ");
 	scanf(" %c", &op);
 
-  printf("Insira um numero: ");
-  scanf("%lf", &x);
+	printf("Insira um numero: ");
+	scanf("%lf", &x);
 
-  printf("Insira outro numero: ");
-  scanf("%lf", &y);
+	printf("Insira outro numero: ");
+	scanf("%lf", &y);
 	
-	switch(op)
-	{
+	switch(op){
 
-    double soma, diferenca, produto, divisaoReal;
-    int divisaoInt, resto;
+		double soma, diferenca, produto, divisaoReal;
+		int divisaoInt, resto;
 
 		case'a':
 
-      soma = x + y; 
+			soma = x + y; 
 			printf("Soma: %.2lf", soma);
 			break;
 
 		case'b':
 
-      diferenca = x - y;
+			diferenca = x - y;
 			printf("Subtração: %.2lf", diferenca);
 			break;
 
 		case'c':
 
-      produto = x * y;
+			produto = x * y;
 			printf("Produto: %.2lf", produto);
 			break;
 
@@ -54,10 +53,10 @@ int main(void) {
       
 			if(y!=0){
 
-        divisaoInt = (int) x / (int) y;
-        printf("Divisão inteira: %d", divisaoInt);
+				divisaoInt = (int) x / (int) y;
+				printf("Divisão inteira: %d", divisaoInt);
 
-      }
+			}
 				
 			else
 				printf("Não pode dividir por zero:");
@@ -68,10 +67,10 @@ int main(void) {
 
 			if(y!=0){
 
-        divisaoReal = x / y;
-        printf("Divisão real: %.2lf", divisaoReal);
+				divisaoReal = x / y;
+				printf("Divisão real: %.2lf", divisaoReal);
 
-      }
+			}
 
 			else
 				printf("Não pode dividir por zero:");		
@@ -80,15 +79,15 @@ int main(void) {
 
 		case'f':
 
-      if(y != 0){
+			if(y != 0){
 
-        resto = (int) x % (int) y;
-			  printf("Resto da divisão: %d", resto);
+				resto = (int) x % (int) y;
+				printf("Resto da divisão: %d", resto);
 
-      }
+			}
 
-      else
-        printf("Não pode dividir por zero:");
+			else
+				printf("Não pode dividir por zero:");
       
 			break;
 
@@ -97,6 +96,6 @@ int main(void) {
 			printf("Opção iexistente");
 			break;
 
-  }  
+	}  
 
 }

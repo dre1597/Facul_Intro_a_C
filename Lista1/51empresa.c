@@ -16,64 +16,64 @@ pagamento de cada funcionário com base em seu código.*/
 
 int main(void) {
   
-  int op;
+	int op;
 
-  printf("\tTIPO DE EMPREGADO\n1-Gerente\n2-Trabalhador comum\n3-Trabalhador por comissão\n4-Trabalhador por empreitada\nOpção:");
-  scanf("%d", &op);
+	printf("\tTIPO DE EMPREGADO\n1-Gerente\n2-Trabalhador comum\n3-Trabalhador por comissão\n4-Trabalhador por empreitada\nOpção:");
+	scanf("%d", &op);
 
-  switch(op){
+	switch(op){
     
-    double salario, salarioTotal, vendasBrutas, quantiaPorItem;
-    int horasExtras, itensProduzidos;
+		double salario, salarioTotal, vendasBrutas, quantiaPorItem;
+		int horasExtras, itensProduzidos;
 
-    case 1:
+		case 1:
 
-      printf("Salario: ");
-      scanf("%lf", &salario);
+			printf("Salario: ");
+			scanf("%lf", &salario);
 
-      printf("Salário total: %.2lf", salario);
-    
-      break;
+			printf("Salário total: %.2lf", salario);
+		
+			break;
 
-    case 2:
+		case 2:
 
-      printf("Salario: ");
-      scanf("%lf", &salario);
+			printf("Salario: ");
+			scanf("%lf", &salario);
 
-      printf("Horas extras: ");
-      scanf("%d", &horasExtras);
+			printf("Horas extras: ");
+			scanf("%d", &horasExtras);
 
-      salarioTotal = salario * 40 + salario * 1.5 * horasExtras;
-      printf("Salário total: %.2lf", salarioTotal);
+			salarioTotal = salario * 40 + salario * 1.5 * horasExtras;
+			printf("Salário total: %.2lf", salarioTotal);
 
-      break;
+			break;
 
-    case 3:
+		case 3:
 
-      printf("Total de vendas brutas: ");
-      scanf("%lf", &vendasBrutas);
+			printf("Total de vendas brutas: ");
+			scanf("%lf", &vendasBrutas);
 
-      salarioTotal = 250 + vendasBrutas * 0.057;
-      printf("Salário total: %.2lf", salarioTotal);
-      break;
+			salarioTotal = 250 + vendasBrutas * 0.057;
+			printf("Salário total: %.2lf", salarioTotal);
+			break;
 
-    case 4:
+		case 4:
 
-      printf("Quantia por item: ");
-      scanf("%lf", &quantiaPorItem);
+			printf("Quantia por item: ");
+			scanf("%lf", &quantiaPorItem);
 
-      printf("Itens produzidos: ");
-      scanf("%d", &itensProduzidos);
+			printf("Itens produzidos: ");
+			scanf("%d", &itensProduzidos);
 
-      salarioTotal = quantiaPorItem * itensProduzidos;
-      printf("Salário total: %.2lf", salarioTotal);
-      break;
+			salarioTotal = quantiaPorItem * itensProduzidos;
+			printf("Salário total: %.2lf", salarioTotal);
+			break;
 
-    default:
+		default:
 
-      printf("Opção inválida.\n");
-      break;
+			printf("Opção inválida.\n");
+			break;
 
-  }
+	}
 
 }

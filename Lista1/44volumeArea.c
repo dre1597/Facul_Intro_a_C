@@ -8,22 +8,22 @@
 
 int main(void) {
   
-  double raio;
+	double raio;
+	
+	printf("Raio da esfera: ");
+	scanf("%lf", &raio);
 
-  printf("Raio da esfera: ");
-  scanf("%lf", &raio);
+	if(raio > 0){
 
-  if(raio > 0){
+		double volume = 4/3 * M_PI * pow(raio,3);
+		double area = 4 * M_PI * pow(raio,2);
 
-    double volume = 4/3 * M_PI * pow(raio,3);
-    double area = 4 * M_PI * pow(raio,2);
+		printf("Volume da esfera: %.2lf\n", volume);
+		printf("Area da esfera: %.2lf", area);
 
-    printf("Volume da esfera: %.2lf\n", volume);
-    printf("Area da esfera: %.2lf", area);
+	}
 
-  }
-
-  else
-    printf("Raio negativo não rola, amigão.\n");
+	else
+		printf("Raio negativo não rola, amigão.\n");
     
 }

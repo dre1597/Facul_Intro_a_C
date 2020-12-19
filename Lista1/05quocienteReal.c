@@ -4,8 +4,8 @@
 
 int main(void) {
 
-  double divisao = (double) 32/5;
+	double divisao = (double) 32/5;
 
-  printf("O quociente real da divisão de 32 por 5 é %.2f.\n", divisao);
+	printf("O quociente real da divisão de 32 por 5 é %.2f.\n", divisao);
   
 }

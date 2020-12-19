@@ -5,22 +5,22 @@
 
 int main(void) {
 
-  double numero;
+	double numero;
 
-  printf("Informe um numero: ");
-  scanf("%lf", &numero);
+	printf("Informe um numero: ");
+	scanf("%lf", &numero);
   
-  if(numero > 0){
+	if(numero > 0){
 
-    double raizQuadrada = sqrt(numero);
-    printf("A raiz quadrada de %.2lf é %.2lf.\n", numero, raizQuadrada);
+		double raizQuadrada = sqrt(numero);
+		printf("A raiz quadrada de %.2lf é %.2lf.\n", numero, raizQuadrada);
 
-  }
-  else if(numero < 0){
+	}
+	else if(numero < 0){
 
-    double quadrado = pow(numero,2);
-    printf("O quadrado de %.2lf é %.2lf.\n", numero, quadrado);
+		double quadrado = pow(numero,2);
+		printf("O quadrado de %.2lf é %.2lf.\n", numero, quadrado);
     
-  }
+	}
   
 }

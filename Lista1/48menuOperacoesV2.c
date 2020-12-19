@@ -22,87 +22,86 @@ nesta base.
 
 int main(void) {
   
-  int op;
+	int op;
 	double num, base, expoente;
-  int sair = 0;
+	int sair = 0;
 	
-  do{
+	do{
 
-    printf("\tMENU\n1-calcula quadrado\n2-calcula raiz quadrada\n3-calcula log\n4-potencia\n5-sair\nOPÇÃO:");
-	  scanf("%d",&op);
+		printf("\tMENU\n1-calcula quadrado\n2-calcula raiz quadrada\n3-calcula log\n4-potencia\n5-sair\nOPÇÃO:");
+		scanf("%d",&op);
 
-    switch(op)
-    {
+		switch(op){
 
-      case 1:
+			case 1:
 
-        printf("Numero: ");
-        scanf("%lf", &num);
+				printf("Numero: ");
+				scanf("%lf", &num);
+		
+				double quadrado = pow(num,2);
+				printf("Quadrado: %.2lf\n", quadrado);
 
-        double quadrado = pow(num,2);
-        printf("Quadrado: %.2lf\n", quadrado);
+				break;
 
-        break;
+			case 2:
 
-      case 2:
+				printf("Numero: ");
+				scanf("%lf", &num);
 
-        printf("Numero: ");
-        scanf("%lf", &num);
+				double raizQuadrada = sqrt(num);
+				printf("Raiz quadrada: %2.lf\n", raizQuadrada);
 
-        double raizQuadrada = sqrt(num);
-        printf("Raiz quadrada: %2.lf\n", raizQuadrada);
+				break;
 
-        break;
+			case 3:
 
-      case 3:
+				printf("Numero: ");
+				scanf("%lf", &num);
 
-        printf("Numero: ");
-        scanf("%lf", &num);
+				printf("Base: ");
+				scanf("%lf", &base);
 
-        printf("Base: ");
-        scanf("%lf", &base);
+				int existLog = ( base != 1 && base > 0) && (num > 0);
 
-        int existLog = ( base != 1 && base > 0) && (num > 0);
+				if(existLog){
 
-        if(existLog){
+					double logaritmo = log(num) / log(base);
+					printf("Log: %.2lf\n", logaritmo);
 
-          double logaritmo = log(num) / log(base);
-          printf("Log: %.2lf\n", logaritmo);
+				}
+			  
+				else
+					printf("Não é possivel realizar a operação.\n");
 
-        }
-          
-        else
-          printf("Não é possivel realizar a operação.\n");
+				break;
 
-        break;
+			case 4:
 
-      case 4:
+				printf("base: ");
+				scanf("%lf",&base);
 
-        printf("base: ");
-        scanf("%lf",&base);
+				printf("Expoente: ");
+				scanf("%lf",&expoente);	
 
-        printf("Expoente: ");
-        scanf("%lf",&expoente);	
+				double potencia = pow(base,expoente);
 
-        double potencia = pow(base,expoente);
+				printf("Potencia: %.2lf\n", potencia);
 
-        printf("Potencia: %.2lf\n", potencia);
+				break;
 
-        break;
+			case 5:
+		
+				printf("Saindo do menu.\n");
+				sair = 1;
+				break;
 
-      case 5:
+			default:
 
-        printf("Saindo do menu.\n");
-        sair = 1;
-        break;
+				printf("Opção Inválida.\n");
+				break;
 
-      default:
+		}
 
-        printf("Opção Inválida.\n");
-        break;
-
-    }
-
-  }while(!sair);
+	}while(!sair);
 	
 }

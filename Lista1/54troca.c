@@ -3,7 +3,7 @@
 
 int main(void) {
   
-  int x, y, aux;
+	int x, y, aux;
 
 	printf("Numero para a váriavel X:");
 	scanf("%d", &x);
