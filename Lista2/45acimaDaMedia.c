@@ -13,7 +13,7 @@ int main(void) {
 		scanf("%lf", &p1[i]);
 
 		printf("Nota P2 do aluno [%d]: ", i + 1);
-		scanf("%lf",&p2[i]);
+		scanf("%lf", &p2[i]);
 
 		printf("\n");
 

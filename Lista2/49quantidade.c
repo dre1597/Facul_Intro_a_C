@@ -15,6 +15,7 @@ int main(void) {
 
 		printf("Elemento [%d]: ", i + 1);
 		scanf("%d", &v[i]);
+		
 	}
 
 	printf("\nVetor lido: \n");

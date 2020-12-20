@@ -12,6 +12,7 @@ int main(void) {
 
 		printf("Elemento[%d]: ", i + 1);
 		scanf("%lf", &v[i]);
+		
 	}
 	
 	double maior=v[0];

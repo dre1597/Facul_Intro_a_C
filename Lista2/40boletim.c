@@ -10,8 +10,10 @@ void imprime(int matricula[], double media[]){
 
 	printf("Matricula\tMedia\n");
 	for(int i = 0; i < MAX ; i++){
+		
 		printf("%d\t", matricula[i]);
 		printf("%.2lf\n", media[i]);
+		
 	}
 		
 	printf("\n");

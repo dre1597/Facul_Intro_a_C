@@ -6,7 +6,7 @@
 
 int main(void) {
   
-  	char s[MAX],a;
+  	char s[MAX], a;
 	int ocorrencia, contador = 0;
 	
 	printf("\nString:");

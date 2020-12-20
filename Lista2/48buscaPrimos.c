@@ -12,6 +12,7 @@ int main(void) {
 
 		printf("Elemento[%d]:",i+1);
 		scanf("%d", &v[i]);
+		
 	}
 
   	int primos[MAX], pos[MAX];

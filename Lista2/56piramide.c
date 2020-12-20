@@ -29,6 +29,7 @@ int main(void) { //funciona se colocar o espaço já na string lida
 		printf("%s",s2);
 		strcat(s2,s);
 		printf("\n");
+		
 	}
 
 }

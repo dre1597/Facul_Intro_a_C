@@ -11,7 +11,9 @@ int main(void) {
 
 		printf("Elemento [%d]: ", i + 1);
 		scanf("%d", &v[i]);
+		
 	}
+	
 	for(int i = 0 ; i < MAX ; i++)
 		printf("%d\t", v[i]);
 
