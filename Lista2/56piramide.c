@@ -10,26 +10,28 @@ pois, sonho tem 5 letras
 
 #include <stdio.h>
 #include <string.h>
+
 #define MAX 100
 
-int main(void) { //funciona se colocar o espaço já na string lida
+int main(void) { 
 
-	char s[100],s2[100];
-	char ch = 32;
-	int tam;
+	char palavra[MAX];
+	int i = 1;
 
-	printf("\nString: ");
+	printf("\nInforme uma palavra : ");
 	gets(s);
-	tam=strlen(s);
-	printf("\n");
-	strcpy(s2,s);
 
-	for(int i = 0 ; i < tam ; i++){
+	int TAM = strlen(s);
 
-		printf("%s",s2);
-		strcat(s2,s);
+	do{
+
+		for(int j = 0 ; j < i ; j++)
+			printf(" %s", palavra);
+
 		printf("\n");
-		
-	}
+
+		i++;
+
+	}while(i <= TAM);
 
 }
